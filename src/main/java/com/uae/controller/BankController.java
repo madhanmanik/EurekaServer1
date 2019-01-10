@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/bank")
+@RequestMapping("/main")
 public class BankController {
 
-	 @GetMapping("/txn")
-	    public String getTransactionDetails(@RequestParam String xrNo) {
-	        return xrNo+"getTrn";
+	 @GetMapping("/test")
+	    public String getTransactionDetails(@RequestParam String name) {
+	        return name+"getTrn";
 	    }
 	
 	 
